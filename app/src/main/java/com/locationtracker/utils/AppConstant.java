@@ -5,4 +5,6 @@ package com.locationtracker.utils;
  */
 public class AppConstant {
     public static final String HOST = "https://maps.googleapis.com/maps/api/distancematrix/";
+
+    public static final String DISTANCEMATRIXKEY = "AIzaSyBubk9N9V4CHeYo53t2h7PhZVTkumnug90";
 }

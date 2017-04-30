@@ -65,15 +65,14 @@ public final class RemoteApiCalls {
 
 
 
-            Call<DurationModel> api = mService.getDuration(origin,destination,"AIzaSyBubk9N9V4CHeYo53t2h7PhZVTkumnug90");
+            Call<DurationModel> api = mService.getDuration(origin,destination,AppConstant.DISTANCEMATRIXKEY);
 
 
             api.enqueue(new Callback<DurationModel>() {
                 @Override
                 public void onResponse(Call<DurationModel> responseCall, Response<DurationModel> response) {
 
-                    Log.d("response" ,response.body().toString());
-
+//                    Log.d("response" ,response.body().toString());
 
                     if (response.body().status.equals("OK")) {
                         if(response.body().rows!=null||response.body().rows.size()>0) {
